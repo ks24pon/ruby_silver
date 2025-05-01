@@ -8,4 +8,4 @@ p "Hello" % 5
 # 今回は文字列"Hello"に指示子ないためそのまま出力
 
 # 指示子付与する場合以下
-p "Hello%d" % 5 # => Hello5
+p "Hello%d" % 5 # => Hello5w

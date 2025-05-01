@@ -1,7 +1,13 @@
-# String#octは文字列を8進数文字列として整数を返す
-puts "10".oct
-puts "110"
-# 2進数の文字列110を10進数に変換して表示
-puts "110".to_i(2)
-# 「先頭に0をつけた数値」は8進数
-puts 080
+# 配列定義
+s = ["one", "two", "three"]
+# 先頭のoneを削除
+s.shift
+# 次の先頭twoを削除
+s.shift
+# 引数がないので何も追加されない
+s.unshift
+# 最後に"fourを追加
+s.push "four"
+
+p s
+# => ["three", "four"]

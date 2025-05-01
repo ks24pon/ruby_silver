@@ -1,13 +1,11 @@
-# 配列定義
-s = ["one", "two", "three"]
-# 先頭のoneを削除
-s.shift
-# 次の先頭twoを削除
-s.shift
-# 引数がないので何も追加されない
-s.unshift
-# 最後に"fourを追加
-s.push "four"
+# シンボルキーのハッシュを定義
+hash = {a: 100, b: 200}
+# 2つの位置引数を取る
+def splat_hash(a, b)
+  p a
+  p b
+end
 
-p s
-# => ["three", "four"]
+# ハッシュを*で展開して渡す
+# *hashは[[]:a, 100],[:b, 200]]と同じ扱い
+splat_hash(*hash)

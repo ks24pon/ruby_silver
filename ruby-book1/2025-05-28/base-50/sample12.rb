@@ -1,14 +1,7 @@
-class Parent
-  attr_reader :name
-  def initialize name
-    @name = name
+class Integer
+  def to_square
+    return self * self
   end
 end
 
-class Child < Parent
-  def initialize name
-    @name = "Child"+name
-  end
-end
-
-puts Child.new("Hoge").name
+print 4.to_square
